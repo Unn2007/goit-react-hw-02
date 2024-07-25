@@ -1,6 +1,8 @@
+import firstLetterUppercase from "../../utils/firstLetterUppercase";
+
 function CustomButton({nameButton,onTap}) {
     return (
-        <button onClick={onTap} >{nameButton}</button>
+        <button onClick={onTap} >{firstLetterUppercase(nameButton)}</button>
     )
 }
 
